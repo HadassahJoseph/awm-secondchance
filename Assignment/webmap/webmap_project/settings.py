@@ -101,14 +101,26 @@ WSGI_APPLICATION = 'webmap_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+#         'NAME': 'michelinstar',
+#         'USER': 'admin',
+#         'PASSWORD': '2005Joseph',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'michelinstar',
-        'USER': 'admin',
-        'PASSWORD': '2005Joseph',
+        'NAME': 'gis',
+        'USER': 'docker',
+        'PASSWORD': 'new_password',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
